@@ -8,7 +8,7 @@
     "build": "webpack --mode production",
     "dev": "webpack --watch --mode development"
   },
-  "author": "Figma",
+  "author": "sonnylazuardi",
   "license": "MIT",
   "devDependencies": {
     "@figma/plugin-typings": "*",
