@@ -2,6 +2,8 @@
 
 > The react + tailwind starter for developing plugins and widgets for Figma and FigJam
 
+![demo](demo.png)
+
 ### Pre-requisites
 
 - [Node.js](https://nodejs.org) – v16
