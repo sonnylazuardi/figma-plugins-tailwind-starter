@@ -23,7 +23,7 @@ function App() {
     <main className="bg-white h-[100vh] flex flex-col justify-center items-center w-full">
       <header className="flex flex-col justify-center items-center mb-4">
         <img src={require("./logo.svg")} />
-        <h2 className="text-2xl">Rectangle Creators</h2>
+        <h2 className="text-2xl">Rectangle Creator</h2>
       </header>
       <section className="flex flex-row justify-center items-center space-x-2  mb-4">
         <label htmlFor="input">Count</label>
