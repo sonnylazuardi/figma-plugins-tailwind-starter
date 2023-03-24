@@ -20,20 +20,20 @@ function App() {
   };
 
   return (
-    <main className="bg-yellow-100 h-[100vh] flex flex-col w-full">
-      <header>
+    <main className="bg-white h-[100vh] flex flex-col justify-center items-center w-full">
+      <header className="flex flex-col justify-center items-center mb-4">
         <img src={require("./logo.svg")} />
         <h2 className="text-2xl">Rectangle Creators</h2>
       </header>
-      <section>
-        <input id="input" type="number" min="0" ref={inputRef} />
-        <label htmlFor="input">Rectangle Count</label>
+      <section className="flex flex-row justify-center items-center space-x-2  mb-4">
+        <label htmlFor="input">Count</label>
+        <input className="border border-neutral-100 rounded-md p-2" id="input" type="number" min="0" ref={inputRef} />
       </section>
-      <footer>
-        <button className="brand" onClick={onCreate}>
+      <footer className="flex flex-row justify-center items-center space-x-2">
+        <button className="bg-blue-500 text-white rounded-md py-2 px-3" onClick={onCreate}>
           Create
         </button>
-        <button onClick={onCancel}>Cancel</button>
+        <button className="border border-neutral-300 rounded-md py-2 px-3" onClick={onCancel}>Cancel</button>
       </footer>
     </main>
   );
