@@ -15,6 +15,13 @@ function App() {
     );
   };
 
+  const onDecode = () => {
+    parent.postMessage(
+      { pluginMessage: { type: "decode" } },
+      "*"
+    );
+  };
+
   const onCancel = () => {
     parent.postMessage({ pluginMessage: { type: "cancel" } }, "*");
   };
@@ -34,6 +41,9 @@ function App() {
           Create
         </button>
         <button className="border border-neutral-300 rounded-md py-2 px-3" onClick={onCancel}>Cancel</button>
+        <button className="bg-blue-500 text-white rounded-md py-2 px-3" onClick={onDecode}>
+          Decode
+        </button>
       </footer>
     </main>
   );
