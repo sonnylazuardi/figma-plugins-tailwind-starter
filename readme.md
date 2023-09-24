@@ -17,7 +17,7 @@ Click `Use this template` button, or clone it in your local machine
 ```
 $ git clone https://github.com/sonnylazuardi/figma-plugins-tailwind-starter
 $ cd figma-plugins-tailwind-starter
-$ pnpm i
+$ bun install
 ```
 
 ### Developing and Building
