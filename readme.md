@@ -31,5 +31,5 @@ $ bun dev
 To build the entire Figma Plugin project:
 
 ```
-$ bun build
+$ bun run build
 ```
