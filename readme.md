@@ -6,8 +6,7 @@
 
 ### Pre-requisites
 
-- [Node.js](https://nodejs.org) – v16
-- [PNPM](https://pnpm.io/) – v7
+- [bun](https://bun.sh/) – v1
 
 ### Use the template
 
@@ -26,11 +25,11 @@ $ pnpm i
 To develop the Figma Plugin project:
 
 ```
-$ pnpm dev
+$ bun dev
 ```
 
 To build the entire Figma Plugin project:
 
 ```
-$ pnpm build
+$ bun build
 ```
