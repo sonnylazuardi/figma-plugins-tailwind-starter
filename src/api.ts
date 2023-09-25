@@ -1,7 +1,5 @@
 import { createPluginAPI, createUIAPI } from "figma-jsonrpc";
 
-let nodes = [];
-
 export const pluginApi = createPluginAPI({
   exit() {
     figma.closePlugin();
@@ -24,6 +22,9 @@ export const pluginApi = createPluginAPI({
     figma.viewport.scrollAndZoomIntoView(nodes);
   }
 })
+
+
+
 
 let eventCallback = {
   selectionChanged: (selection) => { },
