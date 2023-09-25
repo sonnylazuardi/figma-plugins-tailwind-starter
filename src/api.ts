@@ -23,9 +23,6 @@ export const pluginApi = createPluginAPI({
   }
 })
 
-
-
-
 let eventCallback = {
   selectionChanged: (selection) => { },
   pageChanged: (page) => { }
@@ -37,7 +34,6 @@ export const setEventCallback = (name: string, callback: Function) => {
 
 export const uiApi = createUIAPI({
   selectionChanged(selection) {
-    nodes = [];
     eventCallback.selectionChanged(selection.map((item) => item.id))
   },
   pageChanged(page) {
