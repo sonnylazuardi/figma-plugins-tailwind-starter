@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import "./ui.css";
+import { pluginApi } from "./api";
 
 declare function require(path: string): any;
 
@@ -9,14 +10,12 @@ function App() {
 
   const onCreate = () => {
     const count = Number(inputRef.current?.value || 0);
-    parent.postMessage(
-      { pluginMessage: { type: "create-rectangles", count } },
-      "*"
-    );
+    pluginApi.createRectangle(count);
+    pluginApi.notify(`Added ${count} rectangles`);
   };
 
   const onCancel = () => {
-    parent.postMessage({ pluginMessage: { type: "cancel" } }, "*");
+    pluginApi.exit();
   };
 
   return (
